@@ -172,5 +172,6 @@ nmap <C-@>i :cs find i % <CR><CR>
 nmap <C-@>f :cs find f 
 
 nmap m :w <CR>
-nmap z :wq <CR>
-nmap q :q! <CR>
+
+map <C-m> \ci 
+let g:NERDCustomDelimiters = { 'c': { 'left': '//','right': ''   }   }
