@@ -175,7 +175,7 @@ nmap m :w <CR>
 
 let g:NERDCustomDelimiters = { 'c': { 'left': '//','right': ''   }   }
 
-" rainbow
+"rainbow
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle"
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
@@ -195,3 +195,8 @@ let g:rbpt_colorpairs = [
     \ ['red',         'firebrick3'],
     \
     \]
+
+"ctrlp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+nmap <c-n> :tabn <CR>
