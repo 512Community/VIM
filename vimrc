@@ -200,3 +200,5 @@ let g:rbpt_colorpairs = [
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 nmap <c-n> :tabn <CR>
+"gitgutter
+set updatetime=100
