@@ -61,7 +61,7 @@ hi        Statement      ctermfg=yellow          cterm=BOLD        "任何语句
 hi        Conditional    ctermfg=yellow          cterm=BOLD        "if、then、else、endif、switch
 hi        Repeat         ctermfg=yellow          cterm=BOLD        "for、do、while 等
 hi        Label          ctermfg=yellow          cterm=BOLD        "case、default 等
-hi        Operator       ctermfg=yellow          cterm=BOLD        ""sizeof"、"+"、"*" 等
+hi        Operator       ctermfg=blue            cterm=BOLD        ""sizeof"、"+"、"*" 等
 hi        Keyword        ctermfg=yellow          cterm=BOLD        "任何其它关键字
 hi        Exception      ctermfg=lightred        cterm=BOLD        "try、catch、throw
 ""-----------------------------------------------------------------------------------------------------------------------"
@@ -71,8 +71,8 @@ hi        Define         ctermfg=red             cterm=BOLD        "预处理命
 hi        Macro          ctermfg=red             cterm=BOLD        "等同于 Define
 hi        PreCondit      ctermfg=green           cterm=BOLD        "预处理命令 #if、#else、#endif
 ""-----------------------------------------------------------------------------------------------------------------------"
-hi        Type           ctermfg=yellow          cterm=BOLD        "int、long、char 等
-hi        StorageClass   ctermfg=yellow  	 cterm=BOLD        "static、register、volatile 等
+hi        Type           ctermfg=cyan          cterm=BOLD        "int、long、char 等
+hi        StorageClass   ctermfg=cyan  	 	cterm=BOLD        "static、register、volatile 等
 hi        Structure      ctermfg=green      	 cterm=BOLD        "struct、union、enum 等
 hi        Typedef        ctermfg=green       	 cterm=BOLD        "一个 typedef
 ""-----------------------------------------------------------------------------------------------------------------------"
