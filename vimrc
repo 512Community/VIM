@@ -9,6 +9,7 @@ set nocompatible  "去掉讨厌的有关vi一致性模式，避免以前版本�
 " 显示中文帮助
 if version >= 603
 	set helplang=cn
+
 	set encoding=utf-8
 endif
 " 自动缩进
@@ -202,3 +203,19 @@ let g:ctrlp_cmd = 'CtrlP'
 nmap <c-n> :tabn <CR>
 "gitgutter
 set updatetime=100
+let g:gitgutter_highlight_linenrs = 0
+
+function! GlobalChangedLines(ex_cmd)
+	for hunk in GitGutterGetHunks()
+		for lnum in range(hunk[2], hunk[2]+hunk[3]-1)
+			let cursor = getcurpos()
+			silent! execute lnum.a:ex_cmd
+			call setpos('.', cursor)
+		endfor
+	endfor
+endfunction
+
+command -nargs=1 Glines call GlobalChangedLines(<q-args>)
+
+nmap <c-l> :Glines s/\s\+$// <CR>
+
