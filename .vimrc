@@ -173,10 +173,11 @@ nmap <C-@>f :cs find f
 
 nmap m :w <CR>
 
+"map <C-m> \ci 
 let g:NERDCustomDelimiters = { 'c': { 'left': '//','right': ''   }   }
 
-" rainbow
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle"
+
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
     \ ['Darkblue',    'SeaGreen3'],
@@ -193,5 +194,5 @@ let g:rbpt_colorpairs = [
     \ ['darkcyan',    'SeaGreen3'],
     \ ['darkred',     'DarkOrchid3'],
     \ ['red',         'firebrick3'],
-    \
+    \ 
     \]
